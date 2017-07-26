@@ -22,15 +22,9 @@ print('{} female names'.format(len(females)))
 with open(join(dirname(__file__), '..', args.male), 'a', newline='\n') as output:
     for male in males:
         output.write('{}\n'.format(male))
-    # csv_writer = csv.writer(csv_output, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
-    # for male in males:
-    #     csv_writer.writerow(''.join(male))
 
 with open(join(dirname(__file__), '..', args.female), 'a', newline='\n') as output:
     for female in females:
         output.write('{}\n'.format(female))
-    # csv_writer = csv.writer(csv_output, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
-    # for female in females:
-    #     csv_writer.writerow(''.join(female))
 
 print('Done, output: {}, {}'.format(args.male, args.female))
